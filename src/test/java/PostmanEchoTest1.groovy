@@ -12,7 +12,7 @@ class PostmanEchoTest1 {
          .post("/post")
 // Проверки
          .then()
-         .statusCode(404)
-         .body("data", equalTo("some value"));
+         .statusCode(200)
+         .body("data", equalTo("some data"));
     }
 }
